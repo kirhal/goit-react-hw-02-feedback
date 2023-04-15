@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
-
 import Notification from './Notification';
 import Statistics from './Statistics';
 import FeedbackOptions from './FeedbackOptions';
@@ -83,6 +82,11 @@ export class Feedback extends Component {
   }
 }
 
-{
-  /* <Notification message="There is no feedback" /> */
-}
+//  <Section title="">
+//    FeedbackOptions options={} onLeaveFeedback={}/>
+//  </Section>
+
+//  <Section title="">
+//    <Notification message="There is no feedback" /> */
+//    <Statistics good={} neutral={} bad={} total={} positivePercentage={}/>
+//  </Section>

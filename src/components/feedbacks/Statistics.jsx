@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-export function Notification({ message }) {
-  return <p className={css[`statistics-item`]}>{message}</p>;
+export function Statistics({ good, neutral, bad, total, positivePercentage }) {
+  
 }
 
 Notification.propTypes = { message: PropTypes.string.isRequired };
