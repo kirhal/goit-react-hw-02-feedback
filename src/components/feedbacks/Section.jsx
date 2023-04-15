@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './Feedback.module.css';
 
 export function Section({ title, children }) {
   return (
