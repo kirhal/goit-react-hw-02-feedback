@@ -1,7 +1,11 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
+
 import Notification from './Notification';
+import Statistics from './Statistics';
+import FeedbackOptions from './FeedbackOptions';
+import Section from './Section';
 
 export class Feedback extends Component {
   state = {
