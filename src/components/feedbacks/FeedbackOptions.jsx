@@ -2,38 +2,21 @@ import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 
 export function FeedbackOptions({ options, onLeaveFeedback }) {
+  const keysArr = Object.key(options);
   return (
     <ul className={css['buttons-list']}>
-      <li>
-        <button
-          type="button"
-          className={css.button}
-          name="good"
-          onClick={this.addFeedback}
-        >
-          Good
-        </button>
-      </li>
-      <li>
-        <button
-          type="button"
-          className={css.button}
-          name="neutral"
-          onClick={this.addFeedback}
-        >
-          Neutral
-        </button>
-      </li>
-      <li>
-        <button
-          type="button"
-          className={css.button}
-          name="bad"
-          onClick={this.addFeedback}
-        >
-          Bad
-        </button>
-      </li>
+      {keysArr.map(elem => {
+        <li key={elem}>
+          <button
+            type="button"
+            className={css.button}
+            name={elem}
+            onClick={onLeaveFeedback}
+          >
+            {elem}
+          </button>
+        </li>;
+      })}
     </ul>
   );
 }

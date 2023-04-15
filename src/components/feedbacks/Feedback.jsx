@@ -82,11 +82,11 @@ export class Feedback extends Component {
   }
 }
 
-//  <Section title="">
-//    FeedbackOptions options={} onLeaveFeedback={}/>
+//  <Section title="Please leave feedback">
+//    FeedbackOptions options={state} onLeaveFeedback={this.addFeedback}/>
 //  </Section>
 
-//  <Section title="">
+//  <Section title="Statistics">
 //    <Notification message="There is no feedback" /> */
-//    <Statistics good={} neutral={} bad={} total={} positivePercentage={}/>
+//    <Statistics good={state.good} neutral={state.neutral} bad={state.bad} total={totalFeedback} positivePercentage={positivePercentage}/>
 //  </Section>
