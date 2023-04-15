@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
+import Notification from './Notification';
 
 export class Feedback extends Component {
   state = {
@@ -66,14 +67,18 @@ export class Feedback extends Component {
           </li>
         </ul>
         <h2 className="title">Statistics</h2>
-        <p className="statistics-item">Good: {state.good}</p>
-        <p className="statistics-item">Neutral: {state.neutral}</p>
-        <p className="statistics-item">Bad: {state.bad}</p>
-        <p className="statistics-item">Total: {totalFeedback}</p>
-        <p className="statistics-item">
+        <p className={css[`statistics-item`]}>Good: {state.good}</p>
+        <p className={css[`statistics-item`]}>Neutral: {state.neutral}</p>
+        <p className={css[`statistics-item`]}>Bad: {state.bad}</p>
+        <p className={css[`statistics-item`]}>Total: {totalFeedback}</p>
+        <p className={css[`statistics-item`]}>
           Positive feedback: {positivePercentage}%
         </p>
       </div>
     );
   }
+}
+
+{
+  /* <Notification message="There is no feedback" /> */
 }

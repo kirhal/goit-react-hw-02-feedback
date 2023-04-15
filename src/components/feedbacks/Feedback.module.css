@@ -1,13 +1,17 @@
 .buttons-list {
   display: flex;
+  margin: 10px 0;
 }
 .button {
+  border-radius: 30%;
+  padding: 0;
+
   width: 100px;
   height: 50px;
-  margin-right: 20px;
+  margin-right: 10px;
 
   font-weight: 500;
-  font-size: 26px;
+  font-size: 22px;
 
   cursor: pointer;
   opacity: none;
@@ -16,4 +20,10 @@
 .button:hover {
   background-color: rgb(44, 119, 189);
   color: white;
+}
+.statistics-item {
+  font-weight: 400;
+  font-size: 22px;
+
+  margin-top: 10px;
 }
