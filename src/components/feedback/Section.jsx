@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import css from './Feedback.module.css';
 
 export default function Section({ title, children }) {
   return (
-    <section className="section">
+    <section className={css.section}>
       <h2 className="title">{title}</h2>
       {children}
     </section>

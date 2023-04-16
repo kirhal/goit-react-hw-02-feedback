@@ -1,11 +1,9 @@
 import { Component } from 'react';
-import PropTypes from 'prop-types';
-
 // import css from './feedbacks/Feedback.module.css';
-import Notification from './feedbacks/Notification';
-import Statistics from './feedbacks/Statistics';
-import FeedbackOptions from './feedbacks/FeedbackOptions';
-import Section from './feedbacks/Section';
+import Notification from './feedback/Notification';
+import Statistics from './feedback/Statistics';
+import FeedbackOptions from './feedback/FeedbackOptions';
+import Section from './feedback/Section';
 
 export class App extends Component {
   state = {
