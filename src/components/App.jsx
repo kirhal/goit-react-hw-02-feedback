@@ -44,29 +44,26 @@ export class App extends Component {
           alignItems: 'center',
           fontSize: 40,
           color: '#010101',
+          flexDirection: 'column',
         }}
       >
         <Section title="Please leave feedback">
           <FeedbackOptions options={state} onLeaveFeedback={this.addFeedback} />
         </Section>
+        <Section title="Statistics">
+          {totalFeedback === 0 ? (
+            <Notification message="There is no feedback" />
+          ) : (
+            <Statistics
+              good={state.good}
+              neutral={state.neutral}
+              bad={state.bad}
+              total={totalFeedback}
+              positivePercentage={positivePercentage}
+            />
+          )}
+        </Section>
       </div>
     );
   }
 }
-
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       <Feedback />
-//     </div>
-//   );
-// };

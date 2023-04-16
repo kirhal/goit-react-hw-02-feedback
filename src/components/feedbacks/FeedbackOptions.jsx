@@ -3,7 +3,6 @@ import css from './Feedback.module.css';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   const keysArr = Object.keys(options);
-  console.log(keysArr);
   return (
     <ul className={css['buttons-list']}>
       {keysArr.map(elem => {

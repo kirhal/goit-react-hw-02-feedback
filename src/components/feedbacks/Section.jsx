@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import css from './Feedback.module.css';
 
 export default function Section({ title, children }) {
   return (
@@ -11,5 +10,3 @@ export default function Section({ title, children }) {
 }
 
 Section.propTypes = { title: PropTypes.string.isRequired };
-
-// Чи треба перевіряти дітей
