@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
 
-export function Section({ title, children }) {
+export default function Section({ title, children }) {
   return (
     <section className="section">
       <h2 className="title">{title}</h2>
